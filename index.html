@@ -6,144 +6,158 @@
     <title>Claridadez | Blog</title>
     <style>
         body {
-            background-color: #280B0F; /* Italian Roast */
-            color: #C6B39A; /* Camel Coat */
+            background-color: #170704; /* Soy Sauce */
+            color: #A1937E; /* Weather Board */
             font-family: 'Times New Roman', Times, serif;
             margin: 0;
-            padding: 20px;
+            padding: 0;
             display: flex;
             flex-direction: column;
             align-items: center;
         }
 
-        /* Estrutura de Layout */
-        .main-wrapper {
-            display: flex;
-            max-width: 1100px;
+        /* CAPA ATUALIZADA COM A IMAGEM DAS FLORES BORDÔ */
+        .header-capa {
             width: 100%;
-            gap: 20px;
-            margin-top: 30px;
-        }
-
-        /* Colunas Laterais */
-        aside {
-            flex: 1; /* Tamanho das laterais */
+            height: 350px;
+            /* Inserida a imagem baixados (7).jpg que você enviou */
+            background: linear-gradient(rgba(23, 7, 4, 0.4), rgba(48, 20, 19, 0.6)), 
+                        url('https://i.ibb.co/L5Qy8Fz/baixados-7.jpg'); 
+            background-size: cover;
+            background-position: center;
             display: flex;
             flex-direction: column;
-            gap: 20px;
+            justify-content: center;
+            align-items: center;
+            border-bottom: 2px solid #4D1519; 
         }
 
-        /* Coluna Central (Posts) */
-        main {
-            flex: 2; /* O centro é maior */
+        h1 { 
+            font-size: 4.5rem; 
+            letter-spacing: 12px; 
+            margin: 0; 
+            color: #A1937E; 
+            text-shadow: 3px 3px 15px rgba(0,0,0,0.9);
+            font-weight: lighter;
         }
 
-        header {
-            text-align: center;
-            width: 100%;
-            padding: 40px 0;
-            border-bottom: 1px solid #7B694E;
+        .header-capa p {
+            color: #594836; 
+            font-style: italic;
+            letter-spacing: 3px;
+            margin-top: 10px;
         }
 
-        h1 { font-size: 3rem; letter-spacing: 4px; margin: 0; }
-        
-        /* Estilo dos Blocos (Posts e Widgets) */
+        .main-wrapper {
+            display: flex;
+            max-width: 1150px;
+            width: 92%;
+            gap: 30px;
+            margin: -60px auto 60px auto; 
+        }
+
+        aside { flex: 1; display: flex; flex-direction: column; gap: 25px; }
+        main { flex: 2.2; }
+
         .post, .widget {
-            background-color: #361319; /* Tamarind */
-            padding: 20px;
-            border-radius: 20px;
-            margin-bottom: 20px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            background-color: #301413; 
+            padding: 30px;
+            border-radius: 15px; 
+            border: 1px solid #594836; 
+            box-shadow: 0 15px 35px rgba(0,0,0,0.6);
         }
 
         .widget h3 {
-            color: #C6B39A;
-            font-size: 1.1rem;
-            border-bottom: 1px solid #6D3A3C;
-            padding-bottom: 5px;
+            color: #A1937E; 
+            font-size: 0.9rem;
+            border-bottom: 1px solid #4D1519; 
+            padding-bottom: 10px;
             margin-top: 0;
             text-transform: uppercase;
-            letter-spacing: 1px;
+            letter-spacing: 2px;
         }
 
         .widget ul { list-style: none; padding: 0; }
-        .widget li { margin: 10px 0; font-size: 0.9rem; color: #7B694E; }
+        .widget li { margin: 15px 0; font-size: 0.9rem; color: #594836; } 
 
-        .post h2 { color: #C6B39A; margin-top: 0; }
-        .post p { color: #7B694E; line-height: 1.5; }
-        .post-date { color: #6D3A3C; font-size: 0.7rem; }
+        .widget a { color: #A1937E; text-decoration: none; transition: 0.3s; }
+        .widget a:hover { color: #4D1519; }
 
-        a { color: #6D3A3C; text-decoration: none; font-weight: bold; transition: 0.3s; }
-        a:hover { color: #C6B39A; }
+        .post h2 { color: #A1937E; margin-top: 0; font-size: 2rem; font-weight: normal; }
+        .post p { color: #A1937E; line-height: 1.8; opacity: 0.85; font-size: 1.1rem; }
+        .post-date { color: #4D1519; font-size: 0.75rem; font-weight: bold; margin-bottom: 10px; display: block; }
 
-        /* Responsividade para celular */
-        @media (max-width: 800px) {
-            .main-wrapper { flex-direction: column; }
-            aside { order: 2; }
-            main { order: 1; }
+        /* BOTÃO "LEIA MAIS" DO SOBRE MIM */
+        .btn-sobre {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 8px 15px;
+            border: 1px solid #4D1519;
+            color: #A1937E;
+            text-transform: uppercase;
+            font-size: 0.75rem;
+            letter-spacing: 1px;
+            text-decoration: none;
+            transition: 0.3s;
         }
+        .btn-sobre:hover { background-color: #4D1519; color: #301413; }
+
+        footer { padding: 40px; color: #594836; font-size: 0.8rem; letter-spacing: 1px; }
+        @media (max-width: 900px) { .main-wrapper { flex-direction: column; margin-top: 20px; } h1 { font-size: 3rem; } }
     </style>
 </head>
 <body>
 
-    <header>
+    <div class="header-capa">
         <h1>CLARIDADEZ</h1>
-        <p>uma visão estética do cotidiano.</p>
-    </header>
+        <p>fragmentos de uma vida estética</p>
+    </div>
 
     <div class="main-wrapper">
         
         <aside>
             <div class="widget">
-                <h3>Assuntos</h3>
+                <h3>Catalogado</h3>
                 <ul>
-                    <li><a href="#"># Vida Pessoal</a></li>
-                    <li><a href="#"># Faculdade</a></li>
-                    <li><a href="#"># Aleatoriedades</a></li>
-                    <li><a href="#"># Estética</a></li>
-                </ul>
-            </div>
-            <div class="widget">
-                <h3>Arquivo</h3>
-                <ul>
-                    <li>Abril 2026</li>
-                    <li>Março 2026</li>
+                    <li><a href="#">⋄ Vida Acadêmica</a></li>
+                    <li><a href="#">⋄ Diários de Estilo</a></li>
+                    <li><a href="#">⋄ Pensamentos Soltos</a></li>
+                    <li><a href="#">⋄ Favoritos do Mês</a></li>
                 </ul>
             </div>
         </aside>
 
         <main>
             <article class="post">
-                <h2>A Estética do Marrom</h2>
-                <p>O encontro entre o clássico e o moderno. Esta paleta de cores reflete minha paixão por tons terrosos.</p>
-                <div class="post-date">13 DE ABRIL, 2026</div>
+                <span class="post-date">14 DE ABRIL, 2026</span>
+                <h2>O Início do Caos e da Claridade</h2>
+                <p>Mergulhar em cores mais escuras traz uma sensação de calma. O blog agora assume essa nova identidade: sombras, café e o silêncio de uma madrugada de estudos. Bem-vinda à nova fase do Claridadez. Escrevendo para a Ana Clara do futuro.</p>
             </article>
 
-            <article class="post">
-                <h2>Rotina na Faculdade</h2>
-                <p>Escreva aqui sobre como está sendo sua semana de estudos...</p>
-                <div class="post-date">11 DE ABRIL, 2026</div>
-            </article>
         </main>
 
         <aside>
             <div class="widget">
-                <h3>Sobre Mim</h3>
-                <p style="font-size: 0.9rem; color: #7B694E;">
-                    Seja bem-vinda ao meu espaço. Aqui compartilho meus estudos e visões.
+                <h3>A Autora</h3>
+                <p style="font-size: 0.95rem; line-height: 1.6;">
+                    Estudante de Matemática, movida a sertanejo, obcecada por geografia e sonhando em dirigir um Volvo roxo rumo a Singapura.
                 </p>
+                <a href="sobre.html" class="btn-sobre">Ler minha história completa</a>
             </div>
             <div class="widget">
-                <h3>Favoritos</h3>
+                <h3>Atualmente</h3>
                 <ul>
-                    <li>🎵 <b>Música:</b> Jazz Night</li>
-                    <li>🎬 <b>Filme:</b> Orgulho e Preconceito</li>
-                    <li>📺 <b>Série:</b> Gilmore Girls</li>
+                    <li>🎵 <span style="color: #A1937E;">Sertanejo & Eletrofunk</span></li>
+                    <li>📍 <span style="color: #A1937E;">João Pessoa, PB</span></li>
                 </ul>
             </div>
         </aside>
 
     </div>
+
+    <footer>
+        &copy; 2026 CLARIDADEZ. TODOS OS DIREITOS RESERVADOS.
+    </footer>
 
 </body>
 </html>
