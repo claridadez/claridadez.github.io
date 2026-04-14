@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Claridadez | Blog</title>
+    <style>
+        /* CSS - O Estilo do site com as novas cores */
+        
+        /* Cor de Fundo do Site Inteiro */
+        body {
+            background-color: #280B0F; /* Cor "Italian Roast" - fundo escuro e chique */
+            color: #C6B39A; /* Cor "Camel Coat" para textos normais */
+            font-family: 'Times New Roman', Times, serif; /* Fonte clássica e elegante */
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 600px;
+            width: 100%;
+        }
+
+        header {
+            text-align: center;
+            padding: 50px 0;
+            border-bottom: 1px solid #7B694E; /* Cor "Boho" para a linha divisória */
+            margin-bottom: 30px;
+        }
+
+        h1 { 
+            font-size: 3rem; 
+            letter-spacing: 4px; 
+            color: #C6B39A; /* Cor "Camel Coat" para o título principal */
+            margin: 0;
+        }
+
+        header p {
+            color: #7B694E; /* Cor "Boho" para o subtítulo */
+            font-size: 1.1rem;
+            font-style: italic;
+        }
+        
+        /* Bloco de Postagem - O visual arredondado que você gosta */
+        .post {
+            background-color: #361319; /* Cor "Tamarind" - fundo do post ligeiramente mais claro que o site */
+            padding: 30px;
+            border-radius: 25px; /* Cantos arredondados como na foto de referência */
+            margin-bottom: 25px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.3); /* Sombra suave para dar destaque */
+        }
+
+        .post h2 { 
+            margin-top: 0; 
+            color: #C6B39A; /* Cor "Camel Coat" para o título do post */
+            font-size: 1.8rem;
+        }
+
+        .post p {
+            color: #7B694E; /* Cor "Boho" para o texto do post - contraste suave */
+            line-height: 1.6;
+        }
+
+        .post-date {
+            color: #6D3A3C; /* Cor "Rubine" para a data, discreta */
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* Links das Redes Sociais no topo */
+        .links {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 25px;
+        }
+
+        a {
+            color: #6D3A3C; /* Cor "Rubine" para os links */
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: color 0.3s;
+        }
+
+        a:hover {
+            color: #C6B39A; /* Cor "Camel Coat" quando passa o mouse por cima */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>CLARIDADEZ</h1>
+            <p>uma visão estética do cotidiano.</p>
+            <div class="links">
+                <a href="#">Instagram</a>
+                <a href="#">Pinterest</a>
+                <a href="#">Tiktok</a>
+            </div>
+        </header>
+
+        <main>
+            <article class="post">
+                <h2>A Estética do Marrom</h2>
+                <p>O encontro entre o clássico e o moderno. Esta paleta de cores reflete minha paixão por tons terrosos e texturas profundas. Aqui começa nossa jornada visual.</p>
+                <div class="post-date">13 de Abril, 2026</div>
+            </article>
+
+            <article class="post">
+                <h2>Minimalismo e Profundidade</h2>
+                <p>Mais um texto para ver como os blocos arredondados se comportam no layout escuro. A cor de fundo 'Italian Roast' traz uma sofisticação única.</p>
+                <div class="post-date">12 de Abril, 2026</div>
+            </article>
+        </main>
+    </div>
+
+</body>
+</html>
